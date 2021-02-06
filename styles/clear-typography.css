@@ -1,0 +1,93 @@
+/*
+/////////////////
+////TYPOGRAPHY//
+///////////////
+*/
+
+
+	/*/////
+	LINK//
+	///*/
+
+
+	a { 
+		color: blue;
+		text-decoration: none;
+	} 
+	a:hover, 
+	a:focus,
+	.hover, 
+	.focus { 
+		color: #161616;
+		text-decoration: underline;
+	}
+	a:active, 
+	.active { 
+		color: #161616;
+		text-shadow: currentColor 0.1px 0 0, currentColor -0.1px 0 0;
+	}
+
+
+	/*/////
+	TEXT//
+	///*/
+	
+	p, 
+	li,
+	label {
+		margin-top: 1.6em;
+		font-size: 1.6em;
+		line-height: 160%;
+		font-family: sans-serif;
+		color: #616161;
+	}
+	li {
+		list-style-position: inside;
+	}
+	p li, 
+	li p, 
+	li li {
+		font-size: 1em;
+	}
+	li li {
+		margin-left: 3.2em;
+	}
+	small {
+		font-size: 0.8em;
+	}
+
+	/*///////
+	HEADER//
+	/////*/
+
+	h1,
+	h2,
+	h3, 
+	h4, 
+	h5, 
+	h6,
+	legend {
+		margin-top: 2.4em;
+		font-family: sans-serif;
+		line-height: 120%;
+		color: #161616;
+	}
+	h1 {
+		font-size: 2.4em;
+	}
+	h2 {
+		font-size: 2em;
+	}
+	h3,
+	legend {
+		font-size: 1.8em;
+	}
+	h4 {
+		font-size: 1.6em;
+	}
+	h5 {
+		font-size: 1.4em;
+	}
+	h6 {
+		font-size: 1.2em;
+	}

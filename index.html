@@ -3,6 +3,25 @@
 <head>
 	<meta charset="utf-8">
 	<title>Smart Age</title>
+	<link rel="stylesheet" href="styles/clear-reset.css" />
+	<link rel="stylesheet" href="styles/clear-grid.css" media="all and (min-width: 640px)" />
+	<link rel="stylesheet" href="styles/clear-typography.css" />
+	<link rel="stylesheet" href="styles/clear-buttons.css" />
+	<link rel="stylesheet" href="styles/clear-forms.css" />
+	<!-- <link rel="stylesheet" href="styles/clear-inspect.css" /> -->
+	<style>
+		#sma {
+			text-align: center;
+		}
+		hr {
+			display: none;
+		}
+		.sma-wrapper {
+			padding: 0.75% 4.5% 1.5%;
+			max-width: 1440px;
+			text-align: left;
+		}
+	</style>
 </head>
 <body class="sma-pag pag-home">
 	<header id="sma-header">
@@ -28,11 +47,13 @@
 				</ul>
 				<p class="navigation-item"><a href="#sma-search">Search</a></p>
 			</nav>
-			<fieldset id="sma-search">
-				<label for="search-element" class="search-title">Find</label>
-				<input id="search-element" class="search-content" type="search" />
-				<button type="submit">Go</button>
-			</fieldset>
+			<form class="sma-for" id="sma-search" action="#">
+				<div class="for-item">
+					<label for="search-element" class="search-title item-title">Find</label>
+					<input id="search-element" class="search-content item-element" type="search" />
+					<button class="sma-but" type="submit">Go</button>
+				</div>
+			</form>
 		</div>
 	</header>
 	<main id="sma-content">

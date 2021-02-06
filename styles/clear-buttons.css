@@ -1,0 +1,44 @@
+/*
+//////////////
+////BUTTONS//
+////////////
+*/
+
+	.sma-but {
+		display: inline-block;
+		padding: 0.8em;
+		margin-top: 1.6em;
+		font-size: 1.6em;
+		line-height: 150%;
+		font-family: sans-serif;
+		text-decoration: none;
+		color: white;
+		background-color: blue;
+		border: 0.2em blue solid;
+		font-weight: bold;
+		margin-right: 1.6em;
+	}
+	.sma-but:hover, 
+	.sma-but:focus {
+		background-color: #161616;
+		border-color: #161616;
+		text-decoration: none;
+		color: white;
+	}
+	.sma-but[disabled] {
+		background-color: #616161;
+		border-color: #616161;
+	}
+	.sma-but.but-secondary {
+		background-color: white;
+		color: blue;
+	}
+	.sma-but.but-secondary:hover, 
+	.sma-but.but-secondary:focus {
+		color: #161616;
+		border-color: #161616;
+	}
+	.sma-but[disabled].but-secondary {
+		color: #616161;
+		border-color: #616161;
+	}
