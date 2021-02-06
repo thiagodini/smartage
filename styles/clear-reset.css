@@ -9,6 +9,7 @@
 	padding: 0; 
 	box-sizing: border-box; 
 	word-spacing: normal; 
+	vertical-align: top;
 }
 html, body { 
 	height: 100%; 
@@ -16,7 +17,6 @@ html, body {
 	overflow-x: hidden;
 }
 article, aside, div, footer, header, hgroup, nav, section {
-	vertical-align: top;
 	display: inline-block; 
 	word-spacing: -0.4em;
 	width: 100%; 
