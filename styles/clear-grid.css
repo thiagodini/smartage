@@ -8,6 +8,7 @@
 	12 COLUMNS//
 	/////////*/
 
+	#sma-shortcuts, 
 	#sma-navigation, 
 	.clear {
 		display: inline-block;
@@ -102,7 +103,6 @@
 
 	#sma-footer .footer-item, 
 	#sma-search, 
-	#sma-shortcuts, 
 	#sma-logo, 
 	.clear {
 		display: inline-block;

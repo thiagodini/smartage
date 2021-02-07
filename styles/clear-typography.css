@@ -38,7 +38,7 @@
 		margin-top: 1.6rem;
 		font-size: 1.8em;
 		line-height: 160%;
-		font-family: sans-serif;
+		font-family: 'Raleway', sans-serif;
 		color: #666666;
 	}
 	li {
@@ -68,14 +68,14 @@
 	h6,
 	legend {
 		margin-top: 2.4rem;
-		font-family: sans-serif;
+		font-family: 'Raleway', sans-serif;
 		text-transform: uppercase;
 		line-height: 120%;
 		color: #D5A368;
 	}
 	h1 {
 		text-transform: none;
-		font-family: serif;
+		font-family: 'Playfair Display', serif;
 		font-size: 8em;
 	}
 	h2 {
