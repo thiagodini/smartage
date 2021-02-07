@@ -17,3 +17,20 @@
 		.sma-the.the-contrast label {
 			color: #ffffff;
 		}
+
+	/*//////////
+	//BUTTONS//
+	////////*/
+
+		.sma-the.the-contrast .sma-but {
+			background-color: #ffffff;
+			border: 0.2em #ffffff solid;
+			color: #333333;
+		}
+		.sma-the.the-contrast .sma-but:hover, 
+		.sma-the.the-contrast .sma-but:focus, 
+		.sma-the.the-contrast a:hover .sma-but, 
+		.sma-the.the-contrast a:focus .sma-but {
+			background-color: #D5A368;
+			border-color: #D5A368;
+		}

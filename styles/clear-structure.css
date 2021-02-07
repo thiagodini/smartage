@@ -27,7 +27,14 @@
 			text-transform: uppercase;
 			display: inline-block;
 			margin-right: 1.6em;
+			margin-left: 1.6em;
 			font-size: 1.4em;
+		}
+		.sma-navigation .navigation-item:first-child {
+			margin-left: 0;
+		}
+		.sma-navigation .navigation-item:last-child {
+			margin-right: 0;
 		}
 	#sma-header {
 	}

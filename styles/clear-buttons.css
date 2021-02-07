@@ -13,32 +13,23 @@
 		font-family: sans-serif;
 		text-decoration: none;
 		color: white;
-		background-color: blue;
-		border: 0.2em blue solid;
+		background-color: #000000;
+		border: 0.2em #000000 solid;
 		font-weight: bold;
-		margin-right: 1.6em;
 	}
 	.sma-but:hover, 
-	.sma-but:focus {
-		background-color: #161616;
-		border-color: #161616;
+	.sma-but:focus, 
+	a:hover .sma-but, 
+	a:focus .sma-but {
+		background-color: #D5A368;
+		border-color: #D5A368;
 		text-decoration: none;
 		color: white;
 	}
 	.sma-but[disabled] {
-		background-color: #616161;
-		border-color: #616161;
+		background-color: gray;
+		border-color: gray;
 	}
-	.sma-but.but-secondary {
-		background-color: white;
-		color: blue;
-	}
-	.sma-but.but-secondary:hover, 
-	.sma-but.but-secondary:focus {
-		color: #161616;
-		border-color: #161616;
-	}
-	.sma-but[disabled].but-secondary {
-		color: #616161;
-		border-color: #616161;
+	.sma-but + .sma-but {
+		margin-left: 1.6em;
 	}
