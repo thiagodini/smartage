@@ -1,0 +1,19 @@
+/*
+/////////////
+////THEMES//
+///////////
+*/
+
+	.sma-the.the-contrast {
+		background-color: #333333;
+	}
+		.sma-the.the-contrast a, 
+		.sma-the.the-contrast a:hover, 
+		.sma-the.the-contrast a:focus {
+			color: #ffffff;
+		}
+		.sma-the.the-contrast p, 
+		.sma-the.the-contrast li,
+		.sma-the.the-contrast label {
+			color: #ffffff;
+		}
