@@ -14,11 +14,24 @@
 	<!-- <link rel="stylesheet" href="styles/clear-inspect.css" /> -->
 	<style>
 		.sma-sec {
-			padding-top: 16rem;
-			padding-bottom: 16rem;
 			border-bottom: 1px solid #000;
 		}
-			.sma-sec .sec-content {
+			.sma-sec .sma-wrapper {
+				padding: 0;
+				max-width: none;
+			}
+			.sma-sec .sec-media, 
+			.sma-sec .sec-header {
+				vertical-align: middle;
+				margin: 0;
+				min-width: 50%;
+				direction: ltr;
+			}
+				.sma-sec .sec-media img {
+					width: 100%;
+				}
+			.sma-sec .sec-header {
+				padding: 0 8.33%;
 				text-align: center;
 			}
 			.sma-sec .sec-category {
@@ -30,6 +43,9 @@
 				font-family: 'Playfair Display', serif;
 				font-size: 8em;
 			}
+		.sma-sec:nth-child(odd) {
+			direction: rtl;
+		}
 	</style>
 </head>
 <body class="sma-pag" id="pag-home">
@@ -69,7 +85,10 @@
 		<hr />
 		<section class="sma-sec sma-the the-contrast">
 			<div class="sma-wrapper">
-				<div class="sec-content">
+				<div class="sec-media">
+					<img src="images/banner-1.jpg" alt="" />
+				</div>
+				<div class="sec-header">
 					<h2 class="sec-title">
 						Engagement Ring 
 					</h2>
@@ -79,7 +98,10 @@
 		</section>
 		<section class="sma-sec">
 			<div class="sma-wrapper">
-				<div class="sec-content">
+				<div class="sec-media">
+					<img src="images/moment-special-night.jpg" alt="" />
+				</div>
+				<div class="sec-header">
 					<h2 class="sec-title">
 						The original Design
 					</h2>
@@ -90,18 +112,24 @@
 		</section>
 		<section class="sma-sec">
 			<div class="sma-wrapper">
-				<div class="sec-content">
+				<div class="sec-media">
+					<img src="images/moment-marriage.jpg" alt="" />
+				</div>
+				<div class="sec-header">
 					<p class="sec-category">The latest from</p>
 					<h2 class="sec-title">
 						Jewelry Store
 					</h2>
-					<p>Discover all that’s new, brilliant and beautiful in the world of Brand's Name.</p>
+					<p>Discover all that’s new, brilliant and beautiful in the world of Smart Age.</p>
 				</div>
 			</div>
 		</section>
 		<section class="sma-sec">
 			<div class="sma-wrapper">
-				<div class="sec-content">
+				<div class="sec-media">
+					<img src="images/moment-birth.jpg" alt="" />
+				</div>
+				<div class="sec-header">
 					<h2 class="sec-title">
 						Classic Bridal
 					</h2>
@@ -112,7 +140,10 @@
 		</section>
 		<section class="sma-sec">
 			<div class="sma-wrapper">
-				<div class="sec-content">
+				<div class="sec-media">
+					<img src="images/moment-graduation.jpg" alt="" />
+				</div>
+				<div class="sec-header">
 					<h2 class="sec-title">
 						Category Rings
 					</h2>
@@ -121,7 +152,10 @@
 		</section>
 		<section class="sma-sec">
 			<div class="sma-wrapper">
-				<div class="sec-content">
+				<div class="sec-media">
+					<img src="images/moment-thankful.jpg" alt="" />
+				</div>
+				<div class="sec-header">
 					<p class="sec-category">Shop</p>
 					<h2 class="sec-title">
 						Selected for You
@@ -132,7 +166,10 @@
 		</section>
 		<section class="sma-sec">
 			<div class="sma-wrapper">
-				<div class="sec-content">
+				<div class="sec-media">
+					<img src="images/moment-dating.jpg" alt="" />
+				</div>
+				<div class="sec-header">
 					<p class="sec-category">About us</p>
 					<h2 class="sec-title">
 						Excellence & Tradition
@@ -148,7 +185,10 @@
 		</section>
 		<section class="sma-sec sma-the the-contrast">
 			<div class="sma-wrapper">
-				<div class="sec-content">
+				<div class="sec-media">
+					<img src="images/banner-2.jpg" alt="" />
+				</div>
+				<div class="sec-header">
 					<p class="sec-category">Stores</p>
 					<h2 class="sec-title">
 						Find Store

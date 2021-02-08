@@ -8,7 +8,6 @@
 	12 COLUMNS//
 	/////////*/
 
-	.sma-sec .sec-content, 
 	#sma-footer .footer-navigation .navigation-list.list-tertiary,
 	#sma-shortcuts, 
 	#sma-navigation, 
@@ -78,6 +77,8 @@
 	6 COLUMNS//
 	////////*/
 
+	.sma-sec .sec-media, 
+	.sma-sec .sec-header, 
 	#sma-footer .footer-copyrights, 
 	#sma-footer .footer-logo, 
 	#sma-footer .footer-navigation .navigation-list, 
