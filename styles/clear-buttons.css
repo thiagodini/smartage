@@ -15,7 +15,9 @@
 		color: white;
 		background-color: #000000;
 		border: 0.2em #000000 solid;
-		font-weight: bold;
+		font-weight: normal;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
 	}
 	.sma-but:hover, 
 	.sma-but:focus, 
@@ -32,4 +34,9 @@
 	}
 	.sma-but + .sma-but {
 		margin-left: 1.6em;
+	}
+	span .sma-but, 
+	li .sma-but {
+		font-size: 1em;
+		margin-top: 0;
 	}
