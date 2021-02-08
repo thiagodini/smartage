@@ -12,11 +12,18 @@
 	}
 	#sma {
 		text-align: center;
+		font-size: calc(6px + 4 * ((100vw - 240px) / (1024 - 240)));
 	}
 	.sma-pag {
-		min-height: 100vh;
-		display: grid;
-		grid-template-rows: auto 1fr auto;
+		font-size: calc(6px + 4 * ((100vw - 240px) / (1024 - 240)));
+	}
+	@media all and (min-width: 1080px) {
+		.sma-pag {
+			font-size: 10px;
+			min-height: 100vh;
+			display: grid;
+			grid-template-rows: auto 1fr auto;
+		}
 	}
 	.sma-wrapper {
 		padding: 1.5% 0;
