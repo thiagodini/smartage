@@ -106,7 +106,6 @@
 
 	#sma-footer .footer-item, 
 	#sma-search, 
-	#sma-logo, 
 	.clear {
 		display: inline-block;
 		margin-left: 1.5%;
@@ -118,6 +117,7 @@
 	3 COLUMNS//
 	////////*/
 
+	#sma-logo, 
 	.clear {
 		display: inline-block;
 		margin-left: 1.5%;

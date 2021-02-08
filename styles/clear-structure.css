@@ -71,11 +71,13 @@
 		#sma-search {
 			display: none;
 		}
+	@media all and (min-width: 1080px) {
 		#sma-logo {
 		}
 			#sma-logo img {
 				width: 320px;
 			}
+	}
 			#sma-logo h1 {
 				margin-top: 0;
 			}
