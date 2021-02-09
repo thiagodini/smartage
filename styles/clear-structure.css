@@ -107,7 +107,7 @@
 			display: inline-block;
 		}
 		#sma-footer .footer-item .content-list .content-item + .content-item {
-			margin-left: 0.8em;
+			margin-left: 1.6em;
 		}
 		#sma-footer .footer-navigation .navigation-list.list-secondary {
 			text-align: right;
@@ -122,9 +122,19 @@
 		}
 			#sma-footer .footer-navigation .navigation-list.list-tertiary .navigation-item + .navigation-item:before {
 				content: '/';
-				margin-right: 0.8rem;
+				margin-right: 1.6rem;
 				color: #555;
 			}
+		#sma-footer .footer-item.item-payment .content-item + .content-item {
+			margin-left: 0.8rem;
+		}
 		#sma-footer .footer-logo {
 			text-align: right;
 		}
+		#sma-footer .footer-signature {
+			margin-top: 1.6rem;
+			background-color: rgba(255, 255, 255, 0.034);
+		}
+			#sma-footer .footer-signature .sma-wrapper {
+				padding-top: 0;
+			}

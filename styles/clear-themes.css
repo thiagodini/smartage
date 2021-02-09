@@ -11,18 +11,26 @@
 		.sma-the.the-contrast a, 
 		.sma-the.the-contrast a:hover, 
 		.sma-the.the-contrast a:focus {
-			color: #ffffff;
+			color: #fff;
+		}
+		.sma-the.the-contrast h1, 
+		.sma-the.the-contrast h2,
+		.sma-the.the-contrast h3,
+		.sma-the.the-contrast h4,
+		.sma-the.the-contrast h5,
+		.sma-the.the-contrast h6 {
+			color: #fff;
 		}
 		.sma-the.the-contrast p, 
 		.sma-the.the-contrast li,
 		.sma-the.the-contrast label {
-			color: #ffffff;
+			color: #fff;
 		}
 
 		.sma-the.the-contrast .sma-but {
-			background-color: #ffffff;
-			border: 0.2em #ffffff solid;
-			color: #333333;
+			background-color: #fff;
+			border: 0.2em #fff solid;
+			color: #333;
 		}
 		.sma-the.the-contrast .sma-but:hover, 
 		.sma-the.the-contrast .sma-but:focus, 
@@ -41,10 +49,10 @@
 		.sma-the.the-highlight h4,
 		.sma-the.the-highlight h5,
 		.sma-the.the-highlight h6 {
-			color: #000000;
+			color: #000;
 		}
 		.sma-the.the-highlight p, 
 		.sma-the.the-highlight li,
 		.sma-the.the-highlight label {
-			color: #000000;
+			color: #000;
 		}
