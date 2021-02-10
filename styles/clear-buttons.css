@@ -61,5 +61,8 @@
 	a:focus .sma-but.but-secondary {
 		background-color: transparent;
 		border-color: #D5A368;
-		color: #D5A368;
+		color: #000;
 	}
+		.sma-but.but-secondary.sma-ico:before {
+			color: #D5A368;
+		}

@@ -5,6 +5,7 @@
 */
 
 	[hidden] {
+		display: block;
 		position: absolute;
 		width: 1px;
 		height: 1px;
@@ -105,11 +106,17 @@
 	}
 	#sma-footer {
 	}
+		#sma-footer .footer-navigation {
+			text-align: center;
+		}
 		#sma-footer .footer-item .content-list .content-item {
 			display: inline-block;
 		}
 		#sma-footer .footer-item .content-list .content-item + .content-item {
 			margin-left: 1.6em;
+		}
+		#sma-footer .footer-navigation .navigation-list.list-primary {
+			text-align: left;
 		}
 		#sma-footer .footer-navigation .navigation-list.list-secondary {
 			text-align: right;
