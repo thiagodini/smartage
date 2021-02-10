@@ -4,9 +4,9 @@
 ////////////
 */
 
-	p .sma-but, 
 	li .sma-but,  
-	span .sma-but {
+	span .sma-but,  
+	.sma-but span {
 		font-size: 1em;
 		margin-top: 0;
 	}
@@ -14,16 +14,16 @@
 		color: inherit;
 	}
 	.sma-but {
+		font-family: 'Raleway', sans-serif;
 		display: inline-block;
 		padding: 0.8em;
 		margin-top: 1.6em;
 		font-size: 1.6em;
 		line-height: 150%;
-		font-family: sans-serif;
 		text-decoration: none;
 		color: white;
-		background-color: #000000;
-		border: 0.2em #000000 solid;
+		background-color: #000;
+		border: 0.1em #000 solid;
 		font-weight: normal;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
@@ -34,8 +34,8 @@
 	a:focus .sma-but {
 		background-color: #D5A368;
 		border-color: #D5A368;
-		text-decoration: none;
 		color: white;
+		text-decoration: none;
 	}
 	.sma-but[disabled] {
 		background-color: gray;
@@ -49,4 +49,17 @@
 		border-radius: 6em;
 		padding-right: 1.2em;
 		padding-left: 1.2em;
+		text-transform: none;
+		border-color: #DDD;
+		background-color: transparent;
+		color: #000;
+		font-size: 1.3em;
+	}
+	.sma-but.but-secondary:hover, 
+	.sma-but.but-secondary:focus, 
+	a:hover .sma-but.but-secondary, 
+	a:focus .sma-but.but-secondary {
+		background-color: transparent;
+		border-color: #D5A368;
+		color: #D5A368;
 	}

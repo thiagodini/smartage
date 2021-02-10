@@ -65,4 +65,8 @@
 		display: inline-block;
 		vertical-align: middle;
 		margin: 0;
+		font-family: inherit;
+		color: inherit;
+		text-decoration: inherit;
+		font-weight: inherit;
 	}

@@ -93,6 +93,8 @@
 				position: absolute;
 				top: 0;
 				left: 0;
+				width: auto;
+				font-size: 1em;
 			}
 			#sma-shortcuts .item-search {
 				position: absolute;
