@@ -4,6 +4,15 @@
 ////////////
 */
 
+	p .sma-but, 
+	li .sma-but,  
+	span .sma-but {
+		font-size: 1em;
+		margin-top: 0;
+	}
+	.sma-but * {
+		color: inherit;
+	}
 	.sma-but {
 		display: inline-block;
 		padding: 0.8em;
@@ -35,8 +44,9 @@
 	.sma-but + .sma-but {
 		margin-left: 1.6em;
 	}
-	span .sma-but, 
-	li .sma-but {
-		font-size: 1em;
-		margin-top: 0;
+
+	.sma-but.but-secondary {
+		border-radius: 6em;
+		padding-right: 1.2em;
+		padding-left: 1.2em;
 	}
