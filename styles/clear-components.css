@@ -1,0 +1,30 @@
+/*
+/////////////////
+////COMPONENTS//
+///////////////
+*/
+
+	.sma-com.com-newsletter {
+	}
+		.sma-com.com-newsletter .com-title {
+			font-family: 'Playfair Display', serif;
+			text-transform: none;
+			letter-spacing: 0;
+			font-size: 2.4em;
+			color: #D5A368;
+		}
+		.sma-com.com-newsletter .com-content .content-item {
+			margin-top: 0;
+			position: relative;
+		}
+		.sma-com.com-newsletter .com-content .content-item {
+			margin-top: 0;
+		}
+		.sma-com.com-newsletter .sma-but.but-conversion {
+			position: absolute;
+			right: 0.2rem;
+			bottom: 0.2rem;
+			margin: 0.4rem;
+			font-size: 1.25em;
+			height: 4.4rem;
+		}

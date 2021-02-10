@@ -23,21 +23,28 @@
 		}
 		.sma-the.the-contrast p, 
 		.sma-the.the-contrast li,
-		.sma-the.the-contrast label {
+		.sma-the.the-contrast label,
+		.sma-the.the-contrast input {
 			color: #fff;
 		}
 
 		.sma-the.the-contrast .sma-but {
-			background-color: #fff;
-			border: 0.2em #fff solid;
+			background-color: #D5A368;
+			border: 0.1em #D5A368 solid;
 			color: #333;
 		}
 		.sma-the.the-contrast .sma-but:hover, 
 		.sma-the.the-contrast .sma-but:focus, 
 		.sma-the.the-contrast a:hover .sma-but, 
 		.sma-the.the-contrast a:focus .sma-but {
-			background-color: #D5A368;
-			border-color: #D5A368;
+			background-color: #fff;
+			border-color: #fff;
+			color: #333;
+		}
+
+		.sma-the.the-contrast .sma-for .for-item .item-element:hover, 
+		.sma-the.the-contrast .sma-for .for-item .item-element:focus {
+			border-color: #fff;
 		}
 
 	.sma-the.the-highlight {

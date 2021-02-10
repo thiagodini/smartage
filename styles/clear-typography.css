@@ -34,7 +34,8 @@
 	p, 
 	li,
 	span, 
-	label {
+	label,
+	input {
 		margin-top: 1.6rem;
 		font-size: 1.8em;
 		line-height: 160%;
