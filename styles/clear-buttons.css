@@ -27,6 +27,7 @@
 		font-weight: normal;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
+		text-align: center;
 	}
 	.sma-but:hover, 
 	.sma-but:focus, 
@@ -66,3 +67,18 @@
 		.sma-but.but-secondary.sma-ico:before {
 			color: #D5A368;
 		}
+
+	.sma-but.but-tertiary {
+		border-color: #DDD;
+		background-color: transparent;
+		color: #000;
+		min-width: 280px;
+	}
+	.sma-but.but-tertiary:hover, 
+	.sma-but.but-tertiary:focus, 
+	a:hover .sma-but.but-tertiary, 
+	a:focus .sma-but.but-tertiary {
+		background-color: transparent;
+		border-color: #D5A368;
+		color: #D5A368;
+	}

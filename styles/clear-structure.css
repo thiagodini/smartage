@@ -24,6 +24,7 @@
 	}
 	.sma-line {
 		margin-top: 2.4rem;
+		margin-bottom: 2.4rem;
 		height: 1px;
 		border: none;
 		background-color: #555;
@@ -60,8 +61,8 @@
 		.sma-navigation .navigation-item {
 			text-transform: uppercase;
 			display: inline-block;
-			margin-right: 0.8em;
-			margin-left: 0.8em;
+			margin-right: 1.6em;
+			margin-left: 1.6em;
 			font-size: 1.4em;
 		}
 		.sma-navigation .navigation-item:first-child {
@@ -118,11 +119,8 @@
 	}
 	#sma-footer {
 	}
-		#sma-footer .footer-item .content-list .content-item {
-			display: inline-block;
-		}
-		#sma-footer .footer-item .content-list .content-item + .content-item {
-			margin-left: 1.6em;
+		#sma-footer .sma-wrapper {
+			width: 86%;
 		}
 		#sma-footer .footer-navigation {
 			text-align: center;
@@ -136,15 +134,31 @@
 		#sma-footer .footer-navigation .navigation-list.list-tertiary {
 			margin-top: 1.6rem;
 			text-align: center;
+			font-size: 90%;
 		}
-			#sma-footer .footer-navigation .navigation-list.list-tertiary .navigation-item + .navigation-item:before {
-				content: '/';
-				margin-right: 1.6rem;
-				color: #555;
+			#sma-footer .footer-navigation .navigation-list.list-tertiary .navigation-item {
+				margin-right: 0;
 			}
-		#sma-footer .footer-item.item-payment .content-item + .content-item {
-			margin-left: 0.8rem;
+				#sma-footer .footer-navigation .navigation-list.list-tertiary .navigation-item + .navigation-item:before {
+					content: '/';
+					margin-right: 2.4rem;
+					color: #555;
+				}
+		#sma-footer .footer-item {
 		}
+			#sma-footer .footer-item .item-title {
+				font-size: 1.4em;
+				font-weight: bold;
+			}
+			#sma-footer .footer-item .content-list .content-item {
+				display: inline-block;
+			}
+			#sma-footer .footer-item .content-list .content-item + .content-item {
+				margin-left: 1.6em;
+			}
+			#sma-footer .footer-item.item-payment .content-item + .content-item {
+				margin-left: 0.8rem;
+			}
 		#sma-footer .footer-logo {
 			text-align: right;
 		}
@@ -152,7 +166,11 @@
 			margin-top: 1.6rem;
 			padding-top: 0.8rem;
 			background-color: rgba(255, 255, 255, 0.034);
+			font-size: 90%;
 		}
 			#sma-footer .footer-signature .sma-wrapper {
 				padding-top: 0;
+			}
+			#sma-footer .footer-signature .copyrights-development {
+				text-transform: uppercase;
 			}

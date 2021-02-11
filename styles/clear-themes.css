@@ -23,6 +23,7 @@
 		}
 		.sma-the.the-contrast p, 
 		.sma-the.the-contrast li,
+		.sma-the.the-contrast span,
 		.sma-the.the-contrast label,
 		.sma-the.the-contrast input {
 			color: #fff;
@@ -40,6 +41,19 @@
 			background-color: #fff;
 			border-color: #fff;
 			color: #333;
+		}
+		.sma-the.the-contrast .sma-but.but-tertiary {
+			border-color: #555;
+			background-color: transparent;
+			color: #fff;
+		}
+		.sma-the.the-contrast .sma-but.but-tertiary:hover, 
+		.sma-the.the-contrast .sma-but.but-tertiary:focus, 
+		.sma-the.the-contrast a:hover .sma-but.but-tertiary, 
+		.sma-the.the-contrast a:focus .sma-but.but-tertiary {
+			background-color: transparent;
+			border-color: #D5A368;
+			color: #D5A368;
 		}
 
 		.sma-the.the-contrast .sma-for .for-item .item-element:hover, 
