@@ -73,6 +73,16 @@
 	.sma-sec:nth-child(odd) {
 		direction: rtl;
 	}
+	.sma-sec#jewelry {
+	}
+		.sma-sec#jewelry .sma-wrapper {
+			justify-content: center;
+		}
+		.sma-sec#jewelry .sec-header {
+			text-align: center;
+			padding-right: 0;
+			padding-left: 0;
+		}
 	.sma-sec#our-story {
 	}
 		.sma-sec#our-story .sma-wrapper {
@@ -95,11 +105,11 @@
 				text-align: left;
 				overflow: hidden;
 			}
-@media all and (min-width: 960px) {
+		@media all and (min-width: 960px) {
 			.sma-sec#our-story .sec-item:nth-child(odd) {
 				margin-top: -4.8rem;
 			}
-}
+		}
 			.sma-sec#our-story .sec-item .item-media {
 				margin-bottom: -9.6rem;
 			}
