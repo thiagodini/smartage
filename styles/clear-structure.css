@@ -37,12 +37,14 @@
 		font-size: 10px;
 	}
 	@media all and (max-width: 1080px) {
-		#sma,
+		#sma {
+			font-size: calc(5px + 3 * ((100vw - 240px) / (1080 - 240)));
+		}
 		.sma-pag {
-			font-size: calc(6px + 4 * ((100vw - 240px) / (1024 - 240)));
+			font-size: calc(7px + 2 * ((100vw - 240px) / (1080 - 240)));
 		}
 	}
-	@media all and (min-width: 1080px) {
+	@media all and (min-width: 1081px) {
 		.sma-pag {
 			min-height: 100vh;
 			display: grid;
