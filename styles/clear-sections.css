@@ -73,6 +73,52 @@
 	.sma-sec:nth-child(odd) {
 		direction: rtl;
 	}
+	.sma-sec#our-story {
+	}
+		.sma-sec#our-story .sma-wrapper {
+			display: inline-block;
+			text-align: center;
+		}
+		.sma-sec#our-story .sec-header {
+			text-align: center;
+		}
+		.sma-sec#our-story .sec-content {
+			padding-top: 4.8rem;
+			padding-bottom: 4.8rem;
+			margin-bottom: 4.8rem;
+			margin-top: -4.8rem;
+		}
+		.sma-sec#our-story .sec-item {
+			text-align: left;
+		}
+			.sma-sec#our-story .sec-item {
+				text-align: left;
+				overflow: hidden;
+			}
+@media all and (min-width: 960px) {
+			.sma-sec#our-story .sec-item:nth-child(odd) {
+				margin-top: -4.8rem;
+			}
+}
+			.sma-sec#our-story .sec-item .item-media {
+				margin-bottom: -9.6rem;
+			}
+			.sma-sec#our-story .sec-item .item-header {
+				padding: 3.6rem;
+				margin-left: 3.6rem;
+				background-color: #fff;
+			}
+				.sma-sec#our-story .sec-item .item-category {
+					margin-top: 0.8rem;
+				}
+				.sma-sec#our-story .sec-item .item-title {
+					margin-top: 0.8rem;
+					font-size: 4.8em;
+					font-family: 'Playfair Display', serif;
+					line-height: 120%;
+					letter-spacing: 0;
+					color: #000;
+				}
 	.sma-sec#stores {
 	}
 		.sma-sec#stores .sma-wrapper {
