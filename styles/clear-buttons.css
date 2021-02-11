@@ -82,3 +82,27 @@
 		border-color: #D5A368;
 		color: #D5A368;
 	}
+
+	.sma-but.but-light {
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		color: #000;
+	}
+	.sma-but.but-light:hover, 
+	.sma-but.but-light:focus, 
+	a:hover .sma-but.but-light, 
+	a:focus .sma-but.but-light {
+		background-color: transparent;
+		border-color: #D5A368;
+		color: #D5A368;
+	}
+		.sma-but.but-light.sma-ico:before {
+			font-size: 1em;
+			border: 0.1rem solid #D5A368;
+			height: 4.4rem;
+			line-height: 4.2rem;
+			width: 4.4rem;
+			border-radius: 6rem;
+			text-indent: 0.5rem;
+		}

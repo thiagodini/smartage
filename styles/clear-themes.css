@@ -56,6 +56,27 @@
 			color: #D5A368;
 		}
 
+
+		.sma-the.the-contrast .sma-but.but-light {
+			border: none;
+			background-color: transparent;
+			color: #fff;
+		}
+		.sma-the.the-contrast .sma-but.but-light:hover, 
+		.sma-the.the-contrast .sma-but.but-light:focus, 
+		.sma-the.the-contrast a:hover .sma-but.but-light, 
+		.sma-the.the-contrast a:focus .sma-but.but-light {
+			background-color: transparent;
+			color: #fff;
+		}
+			.sma-the.the-contrast .sma-but.but-light.sma-ico:before {
+				border-color: #D5A368;
+			}
+			.sma-the.the-contrast .sma-but.but-light.sma-ico:hover:before, 
+			.sma-the.the-contrast .sma-but.but-light.sma-ico:focus:before {
+				border-color: #fff;
+			}
+
 		.sma-the.the-contrast .sma-for .for-item .item-element:hover, 
 		.sma-the.the-contrast .sma-for .for-item .item-element:focus {
 			border-color: #fff;
