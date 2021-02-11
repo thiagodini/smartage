@@ -32,6 +32,7 @@
 	}
 	#sma,
 	.sma-pag {
+		scroll-behavior: smooth;
 		text-align: center;
 		font-size: 10px;
 	}
