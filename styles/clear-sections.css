@@ -30,7 +30,6 @@
 				min-width: 100%;
 			}
 		.sma-sec[data-sec-size='l'] {
-			min-height: 67vh;
 			position: relative;
 			overflow: hidden;
 			display: flex;
@@ -38,6 +37,7 @@
 			align-items: flex-end;
 		}
 			.sma-sec[data-sec-size='l'] .sma-wrapper {
+				min-height: 67vh;
 				position: static;
 			}
 			.sma-sec[data-sec-size='l'] .sec-header {
@@ -73,3 +73,17 @@
 	.sma-sec:nth-child(odd) {
 		direction: rtl;
 	}
+	.sma-sec#stores {
+	}
+		.sma-sec#stores .sma-wrapper {
+			justify-content: center;
+		}
+		.sma-sec#stores .sec-header {
+			text-align: center;
+		}
+		.sma-sec#stores.sma-the.the-contrast {
+			background-color: #000;
+		}
+		.sma-sec#stores .sec-media {
+			opacity: 0.34;
+		}
