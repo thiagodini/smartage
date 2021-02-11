@@ -12,13 +12,11 @@
 			letter-spacing: 0;
 			font-size: 2.4em;
 			color: #D5A368;
+			display: block;
 		}
-		.sma-com.com-newsletter .com-content .content-item {
+		.sma-com.com-newsletter .com-content {
 			margin-top: 0;
 			position: relative;
-		}
-		.sma-com.com-newsletter .com-content .content-item {
-			margin-top: 0;
 		}
 		.sma-com.com-newsletter .sma-but.but-conversion {
 			position: absolute;
