@@ -70,7 +70,10 @@
 			font-family: 'Playfair Display', serif;
 			font-size: 8em;
 		}
-	.sma-sec:nth-child(odd) {
+	.sma-sec:nth-child(even) {
+		direction: rtl;
+	}
+	.sma-sec#design {
 		direction: rtl;
 	}
 	.sma-sec#jewelry {
@@ -80,8 +83,14 @@
 		}
 		.sma-sec#jewelry .sec-header {
 			text-align: center;
-			padding-right: 0;
-			padding-left: 0;
+			padding-left: 1.6rem;
+			padding-right: 1.6rem;
+		}
+	.sma-sec#bridal {
+		background-color: #472138;
+	}
+		.sma-sec#bridal .sec-title {
+			color: #D5A368;
 		}
 	.sma-sec#our-story {
 	}
