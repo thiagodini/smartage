@@ -6,12 +6,14 @@
 
 	.sma-sec {
 	}
+		@media all and (min-width: 960px) {
 		.sma-sec .sma-wrapper {
 			padding: 0;
 			max-width: none;
 			display: inline-flex;
 			justify-content: left;
 			align-items: center;
+		}
 		}
 		.sma-sec .sec-media, 
 		.sma-sec .sec-header {
@@ -32,13 +34,13 @@
 		.sma-sec[data-sec-size='l'] {
 			position: relative;
 			overflow: hidden;
-			display: flex;
-			justify-content: center;
-			align-items: flex-end;
 		}
 			.sma-sec[data-sec-size='l'] .sma-wrapper {
 				min-height: 67vh;
 				position: static;
+				display: inline-flex;
+				justify-content: left;
+				align-items: center;
 			}
 			.sma-sec[data-sec-size='l'] .sec-header {
 				position: relative;
@@ -69,6 +71,7 @@
 			text-transform: none;
 			font-family: 'Playfair Display', serif;
 			font-size: 8em;
+			word-wrap: break-word;
 		}
 	.sma-sec:nth-child(even) {
 		direction: rtl;
