@@ -12,80 +12,10 @@
 	<link rel="stylesheet" href="styles/clear-buttons.css" />
 	<link rel="stylesheet" href="styles/clear-forms.css" />
 	<link rel="stylesheet" href="styles/clear-components.css" />
+	<link rel="stylesheet" href="styles/clear-sections.css" />
 	<link rel="stylesheet" href="styles/clear-structure.css" />
 	<link rel="stylesheet" href="styles/clear-themes.css" />
 	<!-- <link rel="stylesheet" href="styles/clear-inspect.css" /> -->
-	<style>
-		.sma-sec {
-		}
-			.sma-sec .sma-wrapper {
-				padding: 0;
-				max-width: none;
-				display: inline-flex;
-				justify-content: left;
-				align-items: center;
-			}
-			.sma-sec .sec-media, 
-			.sma-sec .sec-header {
-				vertical-align: middle;
-				margin: 0;
-				min-width: 50%;
-				direction: ltr;
-			}
-			.sma-sec .sec-media {
- 				align-self: stretch;
-			}
-				.sma-sec .sec-media img {
-					display: block;
-					object-fit: cover;
-					min-height: 100%;
-					min-width: 100%;
-				}
-			.sma-sec[data-sec-size='l'] {
-				min-height: 67vh;
-				position: relative;
-				overflow: hidden;
-				display: flex;
-				justify-content: center;
-				align-items: flex-end;
-			}
-				.sma-sec[data-sec-size='l'] .sma-wrapper {
-					position: static;
-				}
-				.sma-sec[data-sec-size='l'] .sec-header {
-					position: relative;
-				}
-				.sma-sec[data-sec-size='l'] .sec-media {
-					left: 0;
-					top: 0;
-					position: absolute;
-					width: 100%;
-					height: 100%;
-					display: flex;
-				}
-					.sma-sec[data-sec-size='l'] .sec-media img {
-						display: block;
-						object-fit: cover;
-						min-height: 100%;
-						min-width: 100%;
-					}
-			.sma-sec .sec-header {
-				padding: 6.22% 8.33%;
-				text-align: left;
-			}
-			.sma-sec .sec-category {
-				text-transform: uppercase;
-			}
-			.sma-sec .sec-title {
-				margin-top: 0;
-				text-transform: none;
-				font-family: 'Playfair Display', serif;
-				font-size: 8em;
-			}
-		.sma-sec:nth-child(odd) {
-			direction: rtl;
-		}
-	</style>
 </head>
 <body class="sma-pag" id="pag-home">
 	<header id="sma-header">
@@ -125,7 +55,7 @@
 		</div>
 	</header>
 	<main id="sma-content">
-		<hr />
+		<hr class="sma-line" hidden />
 		<section class="sma-sec sma-the the-contrast" data-sec-size="l">
 			<div class="sma-wrapper">
 				<div class="sec-media">
@@ -243,7 +173,7 @@
 	</main>
 	<footer id="sma-footer" class="sma-the the-contrast">
 		<div class="sma-wrapper">
-			<hr />
+			<hr class="sma-line" hidden />
 			<nav class="footer-navigation sma-navigation">
 				<ul class="navigation-list list-primary">
 					<li class="navigation-item"><a href="#collections">Collections</a></li>
@@ -257,6 +187,7 @@
 					<li class="navigation-item"><a href="#twitter" class="sma-ico ico-twitter"><span class="ico-title" hidden>Twitter</span></a></li>
 					<li class="navigation-item"><a href="#contact" class="sma-but">Contact us</a></li>
 				</ul>
+				<hr class="sma-line" />
 				<div class="sma-com com-newsletter">
 					<h2 class="com-title">
 						Sign up for our newsletter
@@ -275,6 +206,7 @@
 					<li class="navigation-item"><a href="#track">Track order</a></li>
 				</ul>
 			</nav>
+			<hr class="sma-line" />
 			<div class="footer-item item-contact">
 				<h2 class="item-title">Contact us</h2>
 				<div class="item-content">
