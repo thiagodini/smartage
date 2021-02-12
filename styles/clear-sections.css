@@ -95,6 +95,18 @@
 		.sma-sec#bridal .sec-title {
 			color: #D5A368;
 		}
+	.sma-sec#shop {
+		padding-bottom: 6.22%;
+	}
+		.sma-sec#shop .sma-wrapper {
+			display: inline-block;
+		}
+		.sma-sec#shop .sec-header {
+			text-align: center;
+		}
+		.sma-sec#shop .sec-content {
+			text-align: center;
+		}
 	.sma-sec#categories {
 	}
 		.sma-sec#categories .sma-wrapper {
