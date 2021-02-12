@@ -4,13 +4,13 @@
 ////////////
 */
 
-	li .sma-but,  
-	span .sma-but,  
-	.sma-but span {
+	#sma li .sma-but,  
+	#sma span .sma-but,  
+	#sma .sma-but span {
 		font-size: 1em;
 		margin-top: 0;
 	}
-	.sma-but * {
+	#sma .sma-but * {
 		color: inherit;
 	}
 	.sma-but {
@@ -23,7 +23,7 @@
 		text-decoration: none;
 		color: white;
 		background-color: #000;
-		border: 0.1em #000 solid;
+		border: 1px #000 solid;
 		font-weight: normal;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
@@ -56,6 +56,7 @@
 		color: #000;
 		font-size: 1.3em;
 	}
+	.sma-but.but-secondary.active, 
 	.sma-but.but-secondary:hover, 
 	.sma-but.but-secondary:focus, 
 	a:hover .sma-but.but-secondary, 
@@ -67,6 +68,23 @@
 		.sma-but.but-secondary.sma-ico:before {
 			color: #D5A368;
 		}
+	.sma-but.but-secondary[data-but-size='s'] {
+		padding: 0;
+		width: 4rem;
+		height: 4rem;
+		line-height: 3.8rem;
+	}
+	.sma-but.but-secondary[data-but-size='s']:hover, 
+	.sma-but.but-secondary[data-but-size='s']:focus {
+		color: #D5A368;
+	}
+	.sma-but.but-secondary[data-but-size='s'].active:hover, 
+	.sma-but.but-secondary[data-but-size='s'].active:focus {
+		color: inherit;
+	}
+	.sma-but.but-secondary[data-but-size='s']:not(.active) {
+		border-color: transparent;
+	}
 
 	.sma-but.but-tertiary {
 		border-color: #DDD;
