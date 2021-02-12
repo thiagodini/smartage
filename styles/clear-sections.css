@@ -95,6 +95,23 @@
 		.sma-sec#bridal .sec-title {
 			color: #D5A368;
 		}
+	.sma-sec#categories {
+	}
+		.sma-sec#categories .sma-wrapper {
+			justify-content: center;
+		}
+		.sma-sec#categories .sec-header {
+			text-align: center;
+		}
+		.sma-sec#categories .sec-title {
+			letter-spacing: 0.3em;
+		}
+		.sma-sec#categories.sma-the.the-contrast {
+			background-color: #000;
+		}
+		.sma-sec#categories .sec-media {
+			opacity: 0.34;
+		}
 	.sma-sec#our-story {
 	}
 		.sma-sec#our-story .sma-wrapper {
