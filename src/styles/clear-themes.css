@@ -1,0 +1,100 @@
+/*
+/////////////
+////THEMES//
+///////////
+*/
+
+	.sma-the.the-contrast {
+		background-color: #333333;
+	}
+
+		.sma-the.the-contrast a, 
+		.sma-the.the-contrast a:hover, 
+		.sma-the.the-contrast a:focus {
+			color: #fff;
+		}
+		.sma-the.the-contrast h1, 
+		.sma-the.the-contrast h2,
+		.sma-the.the-contrast h3,
+		.sma-the.the-contrast h4,
+		.sma-the.the-contrast h5,
+		.sma-the.the-contrast h6 {
+			color: #fff;
+		}
+		.sma-the.the-contrast p, 
+		.sma-the.the-contrast li,
+		.sma-the.the-contrast span,
+		.sma-the.the-contrast label,
+		.sma-the.the-contrast input {
+			color: #fff;
+		}
+
+		.sma-the.the-contrast .sma-but {
+			background-color: #D5A368;
+			border: 0.1em #D5A368 solid;
+			color: #333;
+		}
+		.sma-the.the-contrast .sma-but:hover, 
+		.sma-the.the-contrast .sma-but:focus, 
+		.sma-the.the-contrast a:hover .sma-but, 
+		.sma-the.the-contrast a:focus .sma-but {
+			background-color: #fff;
+			border-color: #fff;
+			color: #333;
+		}
+		.sma-the.the-contrast .sma-but.but-tertiary {
+			border-color: #555;
+			background-color: transparent;
+			color: #fff;
+		}
+		.sma-the.the-contrast .sma-but.but-tertiary:hover, 
+		.sma-the.the-contrast .sma-but.but-tertiary:focus, 
+		.sma-the.the-contrast a:hover .sma-but.but-tertiary, 
+		.sma-the.the-contrast a:focus .sma-but.but-tertiary {
+			background-color: transparent;
+			border-color: #D5A368;
+			color: #D5A368;
+		}
+
+
+		.sma-the.the-contrast .sma-but.but-light {
+			border: none;
+			background-color: transparent;
+			color: #fff;
+		}
+		.sma-the.the-contrast .sma-but.but-light:hover, 
+		.sma-the.the-contrast .sma-but.but-light:focus, 
+		.sma-the.the-contrast a:hover .sma-but.but-light, 
+		.sma-the.the-contrast a:focus .sma-but.but-light {
+			background-color: transparent;
+			color: #fff;
+		}
+			.sma-the.the-contrast .sma-but.but-light.sma-ico:before {
+				border-color: #D5A368;
+			}
+			.sma-the.the-contrast .sma-but.but-light.sma-ico:hover:before, 
+			.sma-the.the-contrast .sma-but.but-light.sma-ico:focus:before {
+				border-color: #fff;
+			}
+
+		.sma-the.the-contrast .sma-for .for-item .item-element:hover, 
+		.sma-the.the-contrast .sma-for .for-item .item-element:focus {
+			border-color: #fff;
+		}
+
+	.sma-the.the-highlight {
+		background-color: #FAFAFA;
+	}
+		.sma-the.the-highlight h1, 
+		.sma-the.the-highlight h2,
+		.sma-the.the-highlight h3,
+		.sma-the.the-highlight h4,
+		.sma-the.the-highlight h5,
+		.sma-the.the-highlight h6 {
+			color: #000;
+		}
+		.sma-the.the-highlight p, 
+		.sma-the.the-highlight li,
+		.sma-the.the-highlight label {
+			color: #000;
+		}

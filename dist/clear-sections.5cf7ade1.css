@@ -1,0 +1,260 @@
+/*
+////////////////
+////SECTUIONS//
+//////////////
+*/
+
+	.sma-sec {
+	}
+		@media all and (min-width: 960px) {
+		.sma-sec .sma-wrapper {
+			padding: 0;
+			max-width: none;
+			display: inline-flex;
+			justify-content: left;
+			align-items: center;
+		}
+		}
+		.sma-sec .sec-media, 
+		.sma-sec .sec-header {
+			vertical-align: middle;
+			margin: 0;
+			min-width: 50%;
+			direction: ltr;
+		}
+		.sma-sec .sec-media {
+				align-self: stretch;
+		}
+			.sma-sec .sec-media img {
+				display: block;
+				object-fit: cover;
+				min-height: 100%;
+				min-width: 100%;
+			}
+		.sma-sec[data-sec-size='l'] {
+			position: relative;
+			overflow: hidden;
+		}
+			.sma-sec[data-sec-size='l'] .sma-wrapper {
+				min-height: 67vh;
+				position: static;
+				display: inline-flex;
+				justify-content: left;
+				align-items: center;
+			}
+			.sma-sec[data-sec-size='l'] .sec-header {
+				position: relative;
+			}
+			.sma-sec[data-sec-size='l'] .sec-media {
+				left: 0;
+				top: 0;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				display: flex;
+			}
+				.sma-sec[data-sec-size='l'] .sec-media img {
+					display: block;
+					object-fit: cover;
+					min-height: 100%;
+					min-width: 100%;
+				}
+		.sma-sec .sec-header {
+			padding: 6.22% 8.33%;
+			text-align: left;
+		}
+		.sma-sec .sec-category {
+			text-transform: uppercase;
+		}
+		.sma-sec .sec-title {
+			margin-top: 0;
+			text-transform: none;
+			font-family: 'Playfair Display', serif;
+			font-size: 8em;
+			word-wrap: break-word;
+		}
+	.sma-sec:nth-child(even) {
+		direction: rtl;
+	}
+	.sma-sec#design {
+		direction: rtl;
+	}
+	.sma-sec#jewelry {
+	}
+		.sma-sec#jewelry .sma-wrapper {
+			justify-content: center;
+		}
+		.sma-sec#jewelry .sec-header {
+			text-align: center;
+			padding-left: 1.6rem;
+			padding-right: 1.6rem;
+		}
+	.sma-sec#bridal {
+		background-color: #472138;
+	}
+		.sma-sec#bridal .sec-title {
+			color: #D5A368;
+		}
+	.sma-sec#shop {
+		padding-bottom: 6.22%;
+	}
+		.sma-sec#shop .sma-wrapper {
+			display: inline-block;
+		}
+		.sma-sec#shop .sec-header {
+			text-align: center;
+		}
+		.sma-sec#shop .sec-content {
+			text-align: center;
+		}
+	.sma-sec#categories {
+	}
+		.sma-sec#categories .sma-wrapper {
+			justify-content: center;
+		}
+		.sma-sec#categories .sec-header {
+			text-align: center;
+		}
+		.sma-sec#categories .sec-title {
+			letter-spacing: 0.3em;
+		}
+		.sma-sec#categories.sma-the.the-contrast {
+			background-color: #000;
+		}
+		.sma-sec#categories .sec-media {
+			opacity: 0.34;
+		}
+	.sma-sec#our-story {
+	}
+		.sma-sec#our-story .sma-wrapper {
+			display: inline-block;
+			text-align: center;
+		}
+		.sma-sec#our-story .sec-header {
+			text-align: center;
+			padding-left: 1.6rem;
+			padding-right: 1.6rem;
+		}
+		.sma-sec#our-story .sec-content {
+			padding-top: 4.8rem;
+			padding-bottom: 4.8rem;
+			margin-bottom: 4.8rem;
+			margin-top: -4.8rem;
+		}
+		.sma-sec#our-story .sec-item {
+			text-align: left;
+		}
+			.sma-sec#our-story .sec-item {
+				text-align: left;
+				overflow: hidden;
+			}
+		@media all and (min-width: 960px) {
+			.sma-sec#our-story .sec-item:nth-child(odd) {
+				margin-top: -4.8rem;
+			}
+		}
+			.sma-sec#our-story .sec-item .item-media {
+				margin-bottom: -9.6rem;
+				width: 100%;
+			}
+			.sma-sec#our-story .sec-item .item-header {
+				background-color: #fff;
+				position: relative;
+				padding: 3.6rem;
+				left: 3.6rem;
+			}
+				.sma-sec#our-story .sec-item .item-category {
+					margin-top: 0.8rem;
+				}
+				.sma-sec#our-story .sec-item .item-title {
+					margin-top: 0.8rem;
+					font-size: 4.8em;
+					font-family: 'Playfair Display', serif;
+					line-height: 120%;
+					letter-spacing: 0;
+					color: #000;
+				}
+	.sma-sec#events {
+		padding-top: 3.2rem;
+	}
+		.sma-sec#events .sma-wrapper {
+			display: inline-block;
+		}
+		.sma-sec#events .sec-header {
+			padding-left: 0;
+			padding-right: 0;
+			min-width: 0;
+			margin-left: 8.33%;
+			vertical-align: top;
+		}
+		.sma-sec#events .sec-content {
+			padding-top: 6.22%;
+			padding-bottom: 6.22%;
+		}
+		.sma-sec#events .sec-item {
+			text-align: left;
+			width: 100%;
+		}
+			.sma-sec#events .sec-item {
+				text-align: left;
+				display: inline-block;
+				margin-bottom: -1px;
+				border-top: 1px solid #ddd;
+				border-bottom: 1px solid #ddd;
+				padding-bottom: 0.8rem;
+			}
+				.sma-sec#events .sec-item .item-header, 
+				.sma-sec#events .sec-item .item-content {
+					text-align: left;
+					padding: 1.6rem 0;
+					vertical-align: middle;
+				}
+				.sma-sec#events .sec-item .item-header {
+					width: 33%;
+					padding-left: 3.2rem;
+				}
+					.sma-sec#events .sec-item .item-category {
+						margin-top: 0;
+						text-transform: uppercase;
+					}
+					.sma-sec#events .sec-item .item-title {
+						margin-top: 0;
+						font-size: 4.8em;
+						font-family: 'Playfair Display', serif;
+						line-height: 120%;
+						letter-spacing: 0;
+						font-weight: 900;
+						text-transform: none;
+					}
+				.sma-sec#events .sec-item .item-content {
+					padding-right: 3.2rem;
+					width: 67%;
+				}
+					.sma-sec#events .sec-item .item-content .content-title {
+						margin-top: 0;
+						font-size: 3.2rem;
+						font-weight: bold;
+						letter-spacing: 0.05em;
+						color: #000;
+					}
+					.sma-sec#events .sec-item .item-content .content-description {
+						margin-top: 0;
+						font-size: 2.4rem;
+						letter-spacing: 0.05em;
+					}
+	.sma-sec#stores {
+	}
+		.sma-sec#stores .sma-wrapper {
+			justify-content: center;
+		}
+		.sma-sec#stores .sec-header {
+			text-align: center;
+		}
+		.sma-sec#stores.sma-the.the-contrast {
+			background-color: #000;
+		}
+		.sma-sec#stores .sec-media {
+			opacity: 0.34;
+		}
+
+/*# sourceMappingURL=/clear-sections.5cf7ade1.css.map */
