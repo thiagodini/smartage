@@ -126,6 +126,7 @@
 		}
 			.sma-sec#our-story .sec-item .item-media {
 				margin-bottom: -9.6rem;
+				width: 100%;
 			}
 			.sma-sec#our-story .sec-item .item-header {
 				background-color: #fff;
@@ -144,6 +145,74 @@
 					letter-spacing: 0;
 					color: #000;
 				}
+	.sma-sec#events {
+		padding-top: 3.2rem;
+	}
+		.sma-sec#events .sma-wrapper {
+			display: inline-block;
+		}
+		.sma-sec#events .sec-header {
+			padding-left: 0;
+			padding-right: 0;
+			min-width: 0;
+			margin-left: 8.33%;
+			vertical-align: top;
+		}
+		.sma-sec#events .sec-content {
+			padding-top: 6.22%;
+			padding-bottom: 6.22%;
+		}
+		.sma-sec#events .sec-item {
+			text-align: left;
+			width: 100%;
+		}
+			.sma-sec#events .sec-item {
+				text-align: left;
+				display: inline-block;
+				margin-bottom: -1px;
+				border-top: 1px solid #ddd;
+				border-bottom: 1px solid #ddd;
+				padding-bottom: 0.8rem;
+			}
+				.sma-sec#events .sec-item .item-header, 
+				.sma-sec#events .sec-item .item-content {
+					text-align: left;
+					padding: 1.6rem 0;
+					vertical-align: middle;
+				}
+				.sma-sec#events .sec-item .item-header {
+					width: 33%;
+					padding-left: 3.2rem;
+				}
+					.sma-sec#events .sec-item .item-category {
+						margin-top: 0;
+						text-transform: uppercase;
+					}
+					.sma-sec#events .sec-item .item-title {
+						margin-top: 0;
+						font-size: 4.8em;
+						font-family: 'Playfair Display', serif;
+						line-height: 120%;
+						letter-spacing: 0;
+						font-weight: 900;
+						text-transform: none;
+					}
+				.sma-sec#events .sec-item .item-content {
+					padding-right: 3.2rem;
+					width: 67%;
+				}
+					.sma-sec#events .sec-item .item-content .content-title {
+						margin-top: 0;
+						font-size: 3.2rem;
+						font-weight: bold;
+						letter-spacing: 0.05em;
+						color: #000;
+					}
+					.sma-sec#events .sec-item .item-content .content-description {
+						margin-top: 0;
+						font-size: 2.4rem;
+						letter-spacing: 0.05em;
+					}
 	.sma-sec#stores {
 	}
 		.sma-sec#stores .sma-wrapper {

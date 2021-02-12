@@ -79,6 +79,7 @@
 	6 COLUMNS//
 	////////*/
 
+	.sma-sec#events .sec-content,
 	.sma-sec .sec-media, 
 	.sma-sec .sec-header, 
 	#sma-footer .footer-copyrights, 
@@ -106,6 +107,7 @@
 	4 COLUMNS//
 	////////*/
 
+	.sma-sec#events .sec-header,
 	.sma-sec .sec-item, 
 	.sma-pag#pag-home .sma-com.com-newsletter, 
 	#sma-footer .footer-item, 
