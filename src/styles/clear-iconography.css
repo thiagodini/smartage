@@ -30,7 +30,7 @@
 			font-size: 1.8em;
 			width: 1.6rem;
 			height: 1.6rem;
-			line-height: 1.5rem;
+			line-height: 2.4rem;
 			vertical-align: middle;
 			display: inline-block;
 		}
@@ -60,6 +60,12 @@
 		}
 		.sma-ico.ico-instagram:before {
 			content: "\e908";
+		}
+		.sma-ico.ico-menu:before {
+			content: "\e909";
+		}
+		.sma-ico.ico-close:before {
+			content: "\e90a";
 		}
 	.sma-ico .ico-title {
 		display: inline-block;

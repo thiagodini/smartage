@@ -4,6 +4,11 @@
 //////////////
 */
 
+	@media all and (min-width: 1080px) {
+		*, *:before, *:after { 
+			transition: all cubic-bezier(0, .67, .33, 1) 300ms;
+		}
+	}
 	[hidden] {
 		display: block;
 		position: absolute;
@@ -23,12 +28,12 @@
 		display: none;
 	}
 	.sma-line {
-		margin-top: 2.4rem;
-		margin-bottom: 2.4rem;
 		height: 1px;
 		border: none;
-		background-color: #555;
 		display: block;
+		margin-top: 2.4rem;
+		margin-bottom: 2.4rem;
+		background-color: #555;
 	}
 	#sma,
 	.sma-pag {
@@ -38,7 +43,7 @@
 	}
 	@media all and (max-width: 1080px) {
 		#sma {
-			font-size: calc(5px + 3 * ((100vw - 240px) / (1080 - 240)));
+			font-size: calc(8px + 3 * ((100vw - 240px) / (1080 - 240)));
 		}
 		.sma-pag {
 			font-size: calc(7px + 2 * ((100vw - 240px) / (1080 - 240)));
@@ -51,11 +56,13 @@
 			grid-template-rows: auto 1fr auto;
 		}
 	}
-	.sma-wrapper {
-		padding: 1.5% 0;
-		max-width: 1640px;
-		text-align: left;
-		position: relative;
+	@media all and (min-width: 960px) {
+		.sma-wrapper {
+			padding: 1.5% 0;
+			max-width: 1640px;
+			text-align: left;
+			position: relative;
+		}
 	}
 	.sma-navigation {
 	}
@@ -73,16 +80,73 @@
 			margin-right: 0;
 		}
 	#sma-navigation {
+		margin-top: 1.2rem;
 	}
 		#sma-navigation .navigation-item {
 			margin-right: 2.4rem;
 			margin-left: 2.4rem;
 		}
+
+		@media all and (max-width: 960px) {
+			#sma-navigation {
+				display: none;
+				font-size: 2em;
+			}
+				#sma-navigation + .sma-com.com-jumper.jumper-navigation {
+					visibility: visible;
+				}
+			#sma-navigation:target {
+				display: block;
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				width: auto;
+				margin: 0;
+				z-index: 100;
+				background-color: #ffffff;
+			}
+				#sma-navigation:target .navigation-list {
+					position: absolute;
+					width: 100%;
+					display: block;
+					text-align: center;
+					top: 50%;
+					left: 0;
+					transform: translate(0, -50%);
+					margin: 0;
+				}
+					#sma-navigation:target .navigation-item {
+						display: block;
+						margin-left: 0;
+						margin-right: 0;
+					}
+					#sma-navigation:target .navigation-item a {
+						display: block;
+					}
+			#sma-navigation ~ .sma-com.com-jumper.jumper-navigation {
+				display: block;
+			}
+			#sma-navigation:target ~ .sma-com.com-jumper.jumper-top {
+				display: block;
+				z-index: 100;
+			}
+
+		}
+
 	#sma-header {
 	}
 		#sma-header .sma-wrapper {
 			text-align: center;
-			width: 86%;
+			max-width: none;
+			min-height: 20vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-left: auto;
+			margin-right: auto;
 		}
 		#sma-search {
 			display: none;
@@ -95,13 +159,14 @@
 			}
 	}
 			#sma-logo h1 {
-				margin-top: 0;
+				font-size: 2.4rem;
+				margin-top: 2.4rem;
 			}
 		#sma-shortcuts {
+			right: 0;
+			top: 0.8rem;
 			text-align: right;
 			position: absolute;
-			right: 0;
-			top: 0;
 			padding-left: 12rem;
 			padding-right: 12rem;
 		}
@@ -117,18 +182,72 @@
 				top: 0;
 				right: 0;
 			}
-	#sma-content {
+@media all and (max-width: 960px) {
+	#sma-header {
+		position: fixed;
+		z-index: 1000;
+		left: 0;
+		top: 0;
+		width: 100%;
+		background-color: #ffffff;
 	}
+		#sma-header .sma-wrapper {
+			display: inline-block;
+			text-align: left;
+			min-height: 0;
+			font-size: 125%;
+		}
+		#sma-logo {
+			padding: 2.4rem 4.8rem;
+		}
+			#sma-logo h1 {
+				margin-top: 0;
+			}
+		#sma-shortcuts {
+			right: 2.4rem;
+			padding: 0 7.2rem;
+			width: auto;
+		}
+			#sma-shortcuts .item-find, 
+			#sma-shortcuts .item-account, 
+			#sma-shortcuts .item-wishlist {
+				display: none;
+			}
+			#sma-shortcuts .item-search {
+				right: 2.4rem;
+			}
+	#sma-content {
+		padding-top: 8rem;
+	}
+}
 	#sma-footer {
 	}
 		#sma-footer .sma-wrapper {
 			width: 86%;
+			text-align: left;
 		}
 		#sma-footer .footer-navigation {
 			text-align: center;
 		}
 		#sma-footer .footer-navigation .navigation-list.list-primary {
+			display: none;
+		}
+		#sma-footer .sma-com.com-newsletter, 
+		#sma-footer .footer-navigation .navigation-list.list-tertiary {
 			text-align: left;
+		}
+			#sma-footer .footer-navigation .navigation-list.list-tertiary .navigation-item {
+				display: block;
+				margin: 3.6rem 0;
+			}
+@media all and (min-width: 960px) {
+		#sma-footer .sma-wrapper {
+			width: 86%;
+			text-align: center;
+		}
+		#sma-footer .footer-navigation .navigation-list.list-primary {
+			text-align: left;
+			display: block;
 		}
 		#sma-footer .footer-navigation .navigation-list.list-secondary {
 			text-align: right;
@@ -146,6 +265,7 @@
 					margin-right: 2.4rem;
 					color: #555;
 				}
+}
 		#sma-footer .footer-item {
 		}
 			#sma-footer .footer-item .item-title {

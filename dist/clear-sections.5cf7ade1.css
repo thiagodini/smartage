@@ -1,27 +1,32 @@
 /*
-////////////////
-////SECTUIONS//
-//////////////
+///////////////
+////SECTIONS//
+/////////////
 */
 
 	.sma-sec {
 	}
-		@media all and (min-width: 960px) {
-		.sma-sec .sma-wrapper {
-			padding: 0;
-			max-width: none;
-			display: inline-flex;
-			justify-content: left;
-			align-items: center;
+		.sma-sec .sec-header br {
+			display: none;
 		}
+		@media all and (min-width: 960px) {
+			.sma-sec .sma-wrapper {
+				padding: 0;
+				max-width: none;
+				display: inline-flex;
+				justify-content: left;
+				align-items: center;
+			}
+			.sma-sec .sec-header br {
+				display: block;
+			}
 		}
 		.sma-sec .sec-media, 
 		.sma-sec .sec-header {
 			vertical-align: middle;
 			margin: 0;
-			min-width: 50%;
 			direction: ltr;
-		}
+		} 
 		.sma-sec .sec-media {
 				align-self: stretch;
 		}
@@ -36,7 +41,6 @@
 			overflow: hidden;
 		}
 			.sma-sec[data-sec-size='l'] .sma-wrapper {
-				min-height: 67vh;
 				position: static;
 				display: inline-flex;
 				justify-content: left;
@@ -70,14 +74,29 @@
 			margin-top: 0;
 			text-transform: none;
 			font-family: 'Playfair Display', serif;
-			font-size: 8em;
-			word-wrap: break-word;
+			font-size: 5.6em;
+		}
+		@media all and (min-width: 960px) {
+			.sma-sec .sec-title {
+				font-size: 8em;
+			}
 		}
 	.sma-sec:nth-child(even) {
 		direction: rtl;
 	}
+	.sma-sec#banner {
+	}
+		.sma-sec#banner .sma-wrapper {
+			min-height: 80vh;
+		}
+	@media all and (min-width: 960px) {
+		#banner + .sma-sec#design {
+			padding-top: 8rem;
+		}
+	}
 	.sma-sec#design {
-		direction: rtl;
+		direction: ltr;
+		background-color: #F9EFE4;
 	}
 	.sma-sec#jewelry {
 	}
@@ -95,6 +114,12 @@
 		.sma-sec#bridal .sec-title {
 			color: #D5A368;
 		}
+		@media all and (min-width: 960px) {
+			.sma-sec#bridal .sec-header, 
+			.sma-sec#bridal .sec-media {
+				width: 50%;
+			}
+		}
 	.sma-sec#shop {
 		padding-bottom: 6.22%;
 	}
@@ -108,21 +133,55 @@
 			text-align: center;
 		}
 	.sma-sec#categories {
+		direction: ltr;
+		overflow: hidden;
+		position: relative;
+		
 	}
 		.sma-sec#categories .sma-wrapper {
-			justify-content: center;
+			display: inline-block;
+			white-space: nowrap;
 		}
-		.sma-sec#categories .sec-header {
-			text-align: center;
+			.sma-sec#categories .sec-item {
+				white-space: normal;
+				margin-right: 2.4rem;
+				margin-top: 0;
+				position: relative;
+				max-width: calc(95% - 2.4rem);
+			}
+		@media all and (min-width: 960px) {
+			.sma-sec#categories .sec-item {
+				margin-top: 1.5%;
+			}
+			.sma-sec#categories .sec-item:not([class*='active']) {
+				background-color: transparent;
+			}
 		}
+				.sma-sec#categories .sec-item .item-media {
+					align-self: stretch;
+					height: 480px;
+					display: flex;
+				}
+					.sma-sec#categories .sec-item .item-media img {
+						display: block;
+						object-fit: cover;
+						min-height: 100%;
+						min-width: 100%;
+						opacity: .34;
+					}
+				.sma-sec#categories .sec-item .item-header {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
 		.sma-sec#categories .sec-title {
 			letter-spacing: 0.3em;
-		}
-		.sma-sec#categories.sma-the.the-contrast {
-			background-color: #000;
-		}
-		.sma-sec#categories .sec-media {
-			opacity: 0.34;
 		}
 	.sma-sec#our-story {
 	}
@@ -135,12 +194,14 @@
 			padding-left: 1.6rem;
 			padding-right: 1.6rem;
 		}
+	@media all and (min-width: 960px) {
 		.sma-sec#our-story .sec-content {
 			padding-top: 4.8rem;
 			padding-bottom: 4.8rem;
 			margin-bottom: 4.8rem;
 			margin-top: -4.8rem;
 		}
+	}
 		.sma-sec#our-story .sec-item {
 			text-align: left;
 		}
@@ -242,6 +303,35 @@
 						font-size: 2.4rem;
 						letter-spacing: 0.05em;
 					}
+	.sma-sec#shop {
+		overflow: hidden;
+		position: relative;
+	}
+		.sma-sec#shop .sma-wrapper {
+			display: inline-block;
+			white-space: nowrap;
+		}
+			.sma-sec#shop .sec-item {
+				margin-top: 1.5%;
+				position: relative;
+				white-space: normal;
+			}
+				.sma-sec#shop .sec-item img {
+					width: 100%;
+				}
+		@media all and (min-width: 960px) {
+				.sma-sec#shop .sec-item:not([class*='active']) img {
+					opacity: .34;
+					transform: scale(.67);
+				}
+				.sma-sec#shop .sec-item:not([class*='active']) .item-title {
+					transform: scale(.01);
+				}
+				.sma-sec#shop .sec-item .item-title {
+					transform: scale(1.5);
+					margin-top: 4.8rem;
+				}
+		}
 	.sma-sec#stores {
 	}
 		.sma-sec#stores .sma-wrapper {

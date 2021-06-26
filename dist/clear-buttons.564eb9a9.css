@@ -56,7 +56,8 @@
 		color: #000;
 		font-size: 1.3em;
 	}
-	.sma-but.but-secondary.active, 
+	[class*=active] .sma-but.but-secondary, 
+	.sma-but.but-secondary[class*=active], 
 	.sma-but.but-secondary:hover, 
 	.sma-but.but-secondary:focus, 
 	a:hover .sma-but.but-secondary, 
@@ -72,17 +73,20 @@
 		padding: 0;
 		width: 4rem;
 		height: 4rem;
-		line-height: 3.8rem;
+		line-height: 3.6rem;
 	}
 	.sma-but.but-secondary[data-but-size='s']:hover, 
 	.sma-but.but-secondary[data-but-size='s']:focus {
 		color: #D5A368;
 	}
-	.sma-but.but-secondary[data-but-size='s'].active:hover, 
-	.sma-but.but-secondary[data-but-size='s'].active:focus {
+	[class*=active] .sma-but.but-secondary[data-but-size='s']:hover, 
+	[class*=active] .sma-but.but-secondary[data-but-size='s']:focus, 
+	.sma-but.but-secondary[data-but-size='s'][class*=active]:hover, 
+	.sma-but.but-secondary[data-but-size='s'][class*=active]:focus {
 		color: inherit;
 	}
-	.sma-but.but-secondary[data-but-size='s']:not(.active) {
+	li:not([class*=active] .sma-but.but-secondary[data-but-size='s']), 
+	.sma-but.but-secondary[data-but-size='s']:not([class*=active]) {
 		border-color: transparent;
 	}
 
@@ -123,6 +127,7 @@
 			width: 4.4rem;
 			border-radius: 6rem;
 			text-indent: 0.5rem;
+			text-align: center;
 		}
 
 /*# sourceMappingURL=/clear-buttons.564eb9a9.css.map */

@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="styles/clear-structure.css" />
 	<link rel="stylesheet" href="styles/clear-themes.css" />
 	<!-- <link rel="stylesheet" href="styles/clear-inspect.css" /> -->
+  	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body class="sma-pag" id="pag-home">
 	<header id="sma-header">
@@ -39,31 +41,26 @@
 					</a>
 				</div>
 				<ul class="navigation-list">
-					<li class="navigation-item"><a href="#account" class="sma-ico ico-profile"><span class="ico-title" hidden>Account</span></a></li>
-					<li class="navigation-item"><a href="#wishlist" class="sma-ico ico-like"><span class="ico-title" hidden>Wishlist</span></a></li>
+					<li class="navigation-item item-account"><a href="#account" class="sma-ico ico-profile"><span class="ico-title" hidden>Account</span></a></li>
+					<li class="navigation-item item-wishlist"><a href="#wishlist" class="sma-ico ico-like"><span class="ico-title" hidden>Wishlist</span></a></li>
 					<li class="navigation-item"><a href="#bag" class="sma-ico ico-bag"><span class="ico-title" hidden>Bag</span></a></li>
 				</ul>
 				<p class="navigation-item item-search"><a href="#sma-search" class="sma-ico ico-search"><span class="ico-title" hidden>Search</span></a></p>
 			</nav>
-			<form id="sma-search" class="sma-for" action="#">
-				<div class="for-item">
-					<label for="search-element" class="search-title item-title">Find</label>
-					<input id="search-element" class="search-content item-element" type="search" />
-					<button class="sma-but" type="submit">Go</button>
-				</div>
-			</form>
+			<a class="sma-com com-jumper jumper-navigation sma-ico ico-menu" href="#sma-navigation"><span class="com-title" hidden>Navegação</span></a>
+			<a class="sma-com com-jumper jumper-top sma-ico ico-close" href="#sma-header"><span class="com-title ico-title" hidden>Topo</span></a>
 		</div>
 	</header>
 	<main id="sma-content">
 		<hr class="sma-line" hidden />
-		<section class="sma-sec sma-com com-banner" data-sec-size="l">
-			<div class="sma-wrapper">
-				<div class="sec-wrapper com-wrapper sma-the the-contrast">
-					<div class="sec-media">
+		<div class="sma-com com-banner" id="banner">
+			<div class="com-content">
+				<div class="com-item sma-the the-contrast">
+					<div class="item-media">
 						<img src="images/banner-1.jpg" alt="" />
 					</div>
-					<div class="sec-header">
-						<h2 class="sec-title">
+					<div class="item-header">
+						<h2 class="item-title">
 							Engagement Ring 
 						</h2>
 						<a href="#" class="sma-ico ico-right sma-but but-light">
@@ -73,12 +70,27 @@
 						</a>
 					</div>
 				</div>
-				<div class="sec-wrapper com-wrapper sma-the the-contrast">
-					<div class="sec-media">
+				<div class="com-item">
+					<div class="item-media">
+						<img src="images/banner-3.jpg" alt="" />
+					</div>
+					<div class="item-header">
+						<h2 class="item-title">
+							Engagement Ring 
+						</h2>
+						<a href="#" class="sma-ico ico-right sma-but but-light">
+							<span class="ico-title">
+								Explore
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="com-item sma-the the-contrast">
+					<div class="item-media">
 						<img src="images/banner-2.jpg" alt="" />
 					</div>
-					<div class="sec-header">
-						<h2 class="sec-title">
+					<div class="item-header">
+						<h2 class="item-title">
 							Engagement Ring 
 						</h2>
 						<a href="#" class="sma-ico ico-right sma-but but-light">
@@ -88,37 +100,37 @@
 						</a>
 					</div>
 				</div>
-				<nav class="sec-navigation com-navigation">
-					<div class="navigation-wrapper">
-						<ul class="navigation-list">
-							<li class="navigation-item"><a href="#1" class="sma-but but-secondary active" data-but-size='s'>1</a></li>
-							<li class="navigation-item"><a href="#2" class="sma-but but-secondary" data-but-size='s'>2</a></li>
-							<li class="navigation-item"><a href="#3" class="sma-but but-secondary" data-but-size='s'>3</a></li>
-						</ul>
-						<p class="navigation-item item-more">
-							<a href="#">
-								Discover more
-							</a>
-						</p>
-					</div>
-				</nav>
 			</div>
-		</section>
+			<nav class="com-navigation">
+				<div class="navigation-wrapper">
+					<ul class="navigation-list">
+						<li class="navigation-item"><a href="#1" class="sma-but but-secondary" data-but-size='s'>1</a></li>
+						<li class="navigation-item"><a href="#2" class="sma-but but-secondary" data-but-size='s'>2</a></li>
+						<li class="navigation-item"><a href="#3" class="sma-but but-secondary" data-but-size='s'>3</a></li>
+					</ul>
+					<p class="navigation-item item-more">
+						<a href="#">
+							Discover more
+						</a>
+					</p>
+				</div>
+			</nav>
+		</div>
 		<section class="sma-sec sma-the the-highlight" id="design">
 			<div class="sma-wrapper">
-				<div class="sec-media">
-					<img src="images/moment-special-night.jpg" alt="" />
-				</div>
 				<div class="sec-header">
 					<h2 class="sec-title">
 						The original Design
 					</h2>
-					<p>Inspired by a spectacular historical legacy and the most refined glamour of the world today.</p>
+					<p>Inspired by a spectacular historical legacy and the most <br /> refined glamour of the world today.</p>
 					<a href="#" class="sma-ico ico-right sma-but but-light">
 						<span class="ico-title">
 							Explore
 						</span>
 					</a>
+				</div>
+				<div class="sec-media">
+					<img src="images/moment-special-night.jpg" alt="" />
 				</div>
 			</div>
 		</section>
@@ -145,7 +157,7 @@
 				</div>
 				<div class="sec-header">
 					<h2 class="sec-title">
-						Classic Bridal
+						Classic <br />Bridal
 					</h2>
 					<p>Our extraordinary diamonds are chosen to celebrate a love, a hope and a passion. Brilliantly capturing our passion for diamonds, a member of the family individually hand-selects each stone within our bridal collection, so you can fall in love with a diamond for eternity.</p>
 					<a href="#" class="sma-ico ico-right sma-but but-light">
@@ -156,32 +168,70 @@
 				</div>
 			</div>
 		</section>
-		<section class="sma-sec sma-the the-contrast" id="categories" data-sec-size='l'>
-			<div class="sma-wrapper">
-				<div class="sec-media">
-					<img src="images/moment-graduation.jpg" alt="" />
+		<section class="sma-sec" id="categories">
+			<div class="sma-wrapper sec-content">
+				<div class="sec-item sma-the the-contrast">
+					<div class="item-media">
+						<img src="images/category-rings.jpg" alt="" />
+					</div>
+					<div class="item-header">
+						<p class="sec-category">Category</p>
+						<h2 class="sec-title">
+							Rings
+						</h2>
+					</div>
 				</div>
-				<div class="sec-header">
-					<p class="sec-category">Category</p>
-					<h2 class="sec-title">
-						Rings
-					</h2>
+				<div class="sec-item sma-the the-contrast">
+					<div class="item-media">
+						<img src="images/category-life.jpg" alt="" />
+					</div>
+					<div class="item-header">
+						<p class="sec-category">Category</p>
+						<h2 class="sec-title">
+							Rings
+						</h2>
+					</div>
+				</div>
+				<div class="sec-item sma-the the-contrast">
+					<div class="item-media">
+						<img src="images/category-life-rose.jpg" alt="" />
+					</div>
+					<div class="item-header">
+						<p class="sec-category">Category</p>
+						<h2 class="sec-title">
+							Rings
+						</h2>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="sma-sec sma-the the-highlight" data-sec-size='l' id="shop">
-			<div class="sma-wrapper">
-				<div class="sec-header">
-					<p class="sec-category">Shop</p>
-					<h2 class="sec-title">
-						Selected for&nbsp;You
-					</h2>
+			<div class="sec-header">
+				<p class="sec-category">Shop</p>
+				<h2 class="sec-title">
+					Selected for&nbsp;You
+				</h2>
+			</div>
+			<div class="sma-wrapper sec-content">
+				<div class="sec-item">
+					<img class="item-media" src="images/moment-thankful.jpg" alt="" />
+					<p class="item-title">18K Rose Gold Engagement Ring</p>
 				</div>
-				<div class="sec-content">
-					<div class="sec-item">
-						<img class="item-media" src="images/moment-thankful.jpg" alt="" />
-						<p class="item-title">18K Rose Gold Engagement Ring</p>
-					</div>
+				<div class="sec-item">
+					<img class="item-media" src="images/moment-dating.jpg" alt="" />
+					<p class="item-title">18K Rose Gold Engagement Ring</p>
+				</div>
+				<div class="sec-item">
+					<img class="item-media" src="images/moment-birth.jpg" alt="" />
+					<p class="item-title">18K Rose Gold Engagement Ring</p>
+				</div>
+				<div class="sec-item">
+					<img class="item-media" src="images/moment-special-night.jpg" alt="" />
+					<p class="item-title">18K Rose Gold Engagement Ring</p>
+				</div>
+				<div class="sec-item">
+					<img class="item-media" src="images/moment-graduation.jpg" alt="" />
+					<p class="item-title">18K Rose Gold Engagement Ring</p>
 				</div>
 			</div>
 		</section>
@@ -384,5 +434,37 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+	var banner = new Swiper ('.sma-com.com-banner', {
+		slidesPerView: 'auto',
+		wrapperClass: 'com-content',
+		slideClass: 'com-item',
+		pagination: {
+			el: '.navigation-list',
+        	clickable: true,
+	        renderBullet: function (index, className) {
+	         return '<li class="navigation-item '+ className + '"><a class="sma-but but-secondary" data-but-size="s">' + (index + 1) + '</a></li>';
+	        }
+		}, 
+		grabCursor: true
+	});
+	var shop = new Swiper ('.sma-sec#shop', {
+		slidesPerView: 'auto',
+		wrapperClass: 'sec-content',
+		slideClass: 'sec-item', 
+		grabCursor: true,
+		slideToClickedSlide: true,
+		loop: true,
+		centeredSlides: true,
+		centeredSlidesBounds: true
+	});
+	var categories = new Swiper ('.sma-sec#categories', {
+		slidesPerView: 'auto',
+		wrapperClass: 'sec-content',
+		slideClass: 'sec-item', 
+		grabCursor: true,
+		slideToClickedSlide: true
+	});
+	</script>
 </body>
 </html>
