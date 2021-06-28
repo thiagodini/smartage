@@ -45,6 +45,9 @@
 	.sma-but + .sma-but {
 		margin-left: 1.6rem;
 	}
+	.sma-but[data-but-size='l'] {
+		padding: 1.6rem;
+	}
 
 	.sma-but.but-secondary {
 		border-radius: 6em;
@@ -128,6 +131,36 @@
 			border-radius: 6rem;
 			text-indent: 0.5rem;
 			text-align: center;
+		}
+	.sma-but.but-light-secondary {
+		padding: 0;
+		border: none;
+		color: #000;
+		background-color: transparent;
+	}
+	.sma-but.but-light-secondary:hover, 
+	.sma-but.but-light-secondary:focus, 
+	a:hover .sma-but.but-light-secondary, 
+	a:focus .sma-but.but-light-secondary {
+		background-color: transparent;
+		border-color: #D5A368;
+		color: #D5A368;
+	}
+		.sma-but.but-light-secondary.sma-ico:before {
+			font-size: 1em;
+			background-color: #fff;
+			border: 0.1rem solid transparent;
+			height: 6rem;
+			line-height: 5.8rem;
+			width: 6rem;
+			border-radius: 6rem;
+			text-indent: 0.5rem;
+			text-align: center;
+			box-shadow: 0 0 4.8rem rgba(0, 0, 0, 0.07);
+		}
+		.sma-but.but-light-secondary:hover.sma-ico:before, 
+		.sma-but.but-light-secondary:focus.sma-ico:before {
+			box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.07);
 		}
 
 /*# sourceMappingURL=/clear-buttons.564eb9a9.css.map */

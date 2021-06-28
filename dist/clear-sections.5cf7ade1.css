@@ -129,8 +129,11 @@
 		.sma-sec#shop .sec-header {
 			text-align: center;
 		}
-		.sma-sec#shop .sec-content {
-			text-align: center;
+		@media all and (min-width: 960px) {
+			.sma-sec#shop .sec-content {
+				margin-top: -3.6rem;
+				text-align: center;
+			}
 		}
 	.sma-sec#categories {
 		direction: ltr;
@@ -138,6 +141,25 @@
 		position: relative;
 		
 	}
+		.sma-sec#categories .sec-navigation {
+			display: none;
+		}
+			.sma-sec#categories .sec-navigation .navigation-item[aria-disabled="true"] {
+				display: none;
+			}
+			.sma-sec#categories .sec-navigation .navigation-item {
+				position: absolute;
+				top: 50%;
+				display: block;
+				margin: 1.6rem;
+				margin-top: -1.6rem;
+			}
+			.sma-sec#categories .sec-navigation .navigation-item.item-previous {
+				left: 0;
+			}
+			.sma-sec#categories .sec-navigation .navigation-item.item-next {
+				right: 0;
+			}
 		.sma-sec#categories .sma-wrapper {
 			display: inline-block;
 			white-space: nowrap;
@@ -149,19 +171,25 @@
 				position: relative;
 				max-width: calc(95% - 2.4rem);
 			}
+				.sma-sec#categories .sec-item .item-media {
+					align-self: stretch;
+					height: 360px;
+					display: flex;
+				}
 		@media all and (min-width: 960px) {
+		.sma-sec#categories .sec-navigation {
+			display: inline-block;
+		}
 			.sma-sec#categories .sec-item {
 				margin-top: 1.5%;
 			}
 			.sma-sec#categories .sec-item:not([class*='active']) {
 				background-color: transparent;
 			}
-		}
 				.sma-sec#categories .sec-item .item-media {
-					align-self: stretch;
-					height: 480px;
-					display: flex;
+					height: 640px;
 				}
+		}
 					.sma-sec#categories .sec-item .item-media img {
 						display: block;
 						object-fit: cover;
@@ -181,9 +209,14 @@
 					align-items: center;
 				}
 		.sma-sec#categories .sec-title {
+			padding: 0 3.6rem;
 			letter-spacing: 0.3em;
+			width: 100%;
+			word-wrap: break-word;
+			text-align: center;
 		}
 	.sma-sec#our-story {
+		direction: ltr;
 	}
 		.sma-sec#our-story .sma-wrapper {
 			display: inline-block;
@@ -194,7 +227,7 @@
 			padding-left: 1.6rem;
 			padding-right: 1.6rem;
 		}
-	@media all and (min-width: 960px) {
+	@media all and (min-width: 1440px) {
 		.sma-sec#our-story .sec-content {
 			padding-top: 4.8rem;
 			padding-bottom: 4.8rem;
@@ -204,6 +237,8 @@
 	}
 		.sma-sec#our-story .sec-item {
 			text-align: left;
+			margin-left: 0.75%;
+			margin-right: 0.75%;
 		}
 			.sma-sec#our-story .sec-item {
 				text-align: left;
@@ -237,6 +272,7 @@
 				}
 	.sma-sec#events {
 		padding-top: 3.2rem;
+		padding-bottom: 6.4rem;
 	}
 		.sma-sec#events .sma-wrapper {
 			display: inline-block;
@@ -245,12 +281,12 @@
 			padding-left: 0;
 			padding-right: 0;
 			min-width: 0;
-			margin-left: 8.33%;
+			padding: 0 8.33%;
 			vertical-align: top;
+			text-align: center;
 		}
 		.sma-sec#events .sec-content {
-			padding-top: 6.22%;
-			padding-bottom: 6.22%;
+			padding: 6.22% 8.33%;
 		}
 		.sma-sec#events .sec-item {
 			text-align: left;
@@ -270,10 +306,6 @@
 					padding: 1.6rem 0;
 					vertical-align: middle;
 				}
-				.sma-sec#events .sec-item .item-header {
-					width: 33%;
-					padding-left: 3.2rem;
-				}
 					.sma-sec#events .sec-item .item-category {
 						margin-top: 0;
 						text-transform: uppercase;
@@ -287,25 +319,48 @@
 						font-weight: 900;
 						text-transform: none;
 					}
-				.sma-sec#events .sec-item .item-content {
-					padding-right: 3.2rem;
-					width: 67%;
-				}
-					.sma-sec#events .sec-item .item-content .content-title {
-						margin-top: 0;
-						font-size: 3.2rem;
-						font-weight: bold;
-						letter-spacing: 0.05em;
-						color: #000;
+		@media all and (min-width: 960px) {
+			.sma-sec#events .sma-wrapper {
+				display: inline-block;
+			}
+			.sma-sec#events .sec-header {
+				margin-left: 8.22%;
+				text-align: left;
+			}
+			.sma-sec#events .sec-header, 
+			.sma-sec#events .sec-content {
+				padding: 0;
+			}
+					.sma-sec#events .sec-item .item-header {
+						width: 33%;
+						padding-left: 3.2rem;
 					}
-					.sma-sec#events .sec-item .item-content .content-description {
-						margin-top: 0;
-						font-size: 2.4rem;
-						letter-spacing: 0.05em;
+					.sma-sec#events .sec-item .item-content {
+						padding-right: 3.2rem;
+						width: 67%;
 					}
+						.sma-sec#events .sec-item .item-content .content-title {
+							margin-top: 0;
+							font-size: 3.2em;
+							font-weight: bold;
+							letter-spacing: 0.05em;
+							color: #000;
+						}
+						.sma-sec#events .sec-item .item-content .content-description {
+							margin-top: 0;
+							font-size: 2.4em;
+							letter-spacing: 0.05em;
+						}
+		}
+		@media all and (min-width: 960px) and (max-width: 1440px) {
+			.sma-sec#events .sma-wrapper {
+				font-size: 60%;
+			}
+		}
 	.sma-sec#shop {
 		overflow: hidden;
 		position: relative;
+		width: 100vw;
 	}
 		.sma-sec#shop .sma-wrapper {
 			display: inline-block;
@@ -332,6 +387,24 @@
 					margin-top: 4.8rem;
 				}
 		}
+		.sma-sec#shop .sec-navigation {
+		}
+			.sma-sec#shop .sec-navigation .navigation-item[aria-disabled="true"] {
+				display: none;
+			}
+			.sma-sec#shop .sec-navigation .navigation-item {
+				position: absolute;
+				top: 50%;
+				display: block;
+				margin: 1.6rem;
+				margin-top: -1.6rem;
+			}
+			.sma-sec#shop .sec-navigation .navigation-item.item-previous {
+				left: 0;
+			}
+			.sma-sec#shop .sec-navigation .navigation-item.item-next {
+				right: 0;
+			}
 	.sma-sec#stores {
 	}
 		.sma-sec#stores .sma-wrapper {

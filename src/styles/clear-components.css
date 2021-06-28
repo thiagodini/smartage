@@ -39,14 +39,16 @@
 		.sma-com.com-banner .com-navigation .navigation-item.item-more {
 			display: none;
 		}
-@media all and (min-width: 960px) {
+	@media all and (min-width: 960px) {
 	.sma-com.com-banner {
 		padding-bottom: 8rem;
 		margin-bottom: -16rem;
 	}
 		.sma-com.com-banner .com-navigation {
+			border-right: 1px solid #ddd;
 			white-space: nowrap;
 			width: calc(80vh - 8rem);
+			min-width: 640px;
 			height: 8rem;
 			position: relative;
 			z-index: 100;
@@ -74,12 +76,15 @@
 			}
 				.sma-com.com-banner .com-navigation .navigation-item.item-more:before {
 					content: "";
-					width: 1px;
-					height: 50%;
+					display: inline-block;
+					width: 10vh;
+					height: 1px;
+					background-color: #D5A368;
 				}
 				.sma-com.com-banner .com-navigation .navigation-item.item-more a {
+					letter-spacing: 0.32em;
 				}
-}
+	}
 		.sma-com.com-banner .com-content {
 			display: inline-block;
 			white-space: nowrap;
@@ -97,15 +102,16 @@
 					font-family: 'Playfair Display', serif;
 					font-size: 5.6em;
 				}
-		@media all and (min-width: 960px) {
+	@media all and (min-width: 960px) {
 			.sma-com.com-banner .com-item {
 				margin-left: 8rem;
 				width: calc(100% - 8rem);
+				min-height: 720px;
 			}
 				.sma-com.com-banner .com-item .item-title {
 					font-size: 8em;
 				}
-		}
+	}
 				.sma-com.com-banner .com-item .item-header, 
 				.sma-com.com-banner .com-item .item-media {
 					position: relative;
@@ -114,11 +120,16 @@
 					position: relative;
 					min-height: 50vh;
 				}
-		@media all and (min-width: 960px) {
+	@media all and (min-width: 1440px) {
 				.sma-com.com-banner .com-item .item-media {
 					min-height: 80vh;
 				}
-		}
+	}
+	@media all and (min-width: 960px) and (max-width: 1440px) {
+				.sma-com.com-banner .com-item .item-media {
+					min-height: 720px;
+				}
+	}
 					.sma-com.com-banner .com-item .item-media img {
 						min-width: calc(100% - 8rem);
 						position: absolute;
@@ -144,17 +155,17 @@
 					.sma-com.com-banner .com-item .item-header .sma-but {
 						text-align: inherit;
 					}
-			@media all and (min-width: 960px) {
+	@media all and (min-width: 1440px) {
 				.sma-com.com-banner .com-item .item-header {
 					padding: calc(10% - 8rem);
 				}
-			}
+	}
 
 	.sma-com.com-jumper {
 		display: none;
 		position: absolute;
 		left: 1.6rem;
-		top: 2.4rem;
+		top: 2.6rem;
 		line-height: 2.8rem;
 		z-index: 50;
 	}
